@@ -14,6 +14,19 @@
 4. Explique le **pourquoi** des choix, et signale ce qui pourra être demandé en soutenance.
 5. Les analogies avec .NET (C#, Blazor, Razor, DI .NET…) m'aident à comprendre.
 6. Les tâches non techniques déjà faites (ex. backlog) ne sont pas à refaire.
+7. **Un commit à chaque étape terminée** (voir « Workflow Git »). Quand une tâche de la roadmap fonctionne, rappelle-moi de committer avant de passer à la suite.
+
+## Workflow Git
+
+- **Objectif :** l'historique git doit montrer la progression du projet étape par étape (visible par le mentor et en soutenance).
+- **Un commit par tâche de la roadmap**, une fois qu'elle compile et fonctionne. Pas de gros commit qui mélange plusieurs étapes.
+- **Message de commit** : préfixe de type + phase + description courte, par exemple :
+  - `feat(phase-2): display OSM map with ngx-leaflet`
+  - `fix(phase-2): add OSM attribution to tile layer`
+  - `docs: update README with roadmap`
+  - Types utiles : `feat` (fonctionnalité), `fix` (correction), `refactor` (restructuration sans changement de comportement), `test`, `docs`, `chore` (config, dépendances).
+- Vérifier `git status` avant chaque commit (pas de fichiers inutiles, pas de secrets).
+- Cocher la tâche correspondante dans la section « Avancement » dans le même commit.
 
 ## Le projet
 
