@@ -1,16 +1,13 @@
 import { Attribute, Component} from '@angular/core';
 import { LeafletDirective} from '@bluehalo/ngx-leaflet';
 import {latLng, MapOptions, tileLayer} from 'leaflet';
-
 @Component({
-  selector: 'app-map',
+  selector: 'app-my-map-view',
   imports: [LeafletDirective],
-  templateUrl: './my-map.html',
-  styleUrl: './my-map.scss',
+  templateUrl: './my-map-view.html',
+  styleUrl: './my-map-view.scss',
 })
-
-export class MyMap {
-
+export class MyMapView {
 public options: MapOptions = 
   { 
     zoom : 6.2,
