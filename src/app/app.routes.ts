@@ -1,7 +1,7 @@
 import { Routes,Route } from '@angular/router';
-import { MyMap } from './page/map/my-map';
+import { Home } from './page/home/home';
 
 export const routes: Routes = [
-    {path: '', component: MyMap}
+    {path: '', component: Home}
   
 ];
