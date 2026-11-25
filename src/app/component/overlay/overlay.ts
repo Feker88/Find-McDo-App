@@ -6,4 +6,8 @@ import { Component } from '@angular/core';
   templateUrl: './overlay.html',
   styleUrl: './overlay.scss',
 })
-export class Overlay {}
+export class Overlay {
+Continue() {
+throw new Error('Method not implemented.');
+}
+}

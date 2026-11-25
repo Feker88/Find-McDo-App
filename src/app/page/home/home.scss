@@ -1,0 +1,24 @@
+// La page occupe tout l'écran ; search et overlay flottent au-dessus de la carte.
+.home {
+  position: relative;   // repère pour les enfants en position absolute
+  height: 100vh;
+  overflow: hidden;
+}
+
+// Leaflet utilise des z-index jusqu'à 1000 : il faut passer au-dessus.
+app-search {
+  position: absolute;
+  top: 10px;
+  left: 56px;           // à droite des boutons de zoom (+/-)
+  right: 10px;
+  max-width: 400px;
+  z-index: 1001;
+}
+
+app-overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1001;
+}

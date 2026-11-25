@@ -6,4 +6,8 @@ import { Component } from '@angular/core';
   templateUrl: './search.html',
   styleUrl: './search.scss',
 })
-export class Search {}
+export class Search {
+SearchCity() {
+throw new Error('Method not implemented.');
+}
+}

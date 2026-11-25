@@ -1,0 +1,54 @@
+:host {
+  display: block;
+}
+
+.search-card {
+  background: var(--color-surface);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 8px 12px 12px;
+}
+
+.search-label {
+  display: block;
+  font-size: 15px;
+  margin-bottom: 8px;
+}
+
+.search-row {
+  display: flex;         // champ + bouton sur une même ligne
+  align-items: center;
+  gap: 8px;
+}
+
+.search-input {
+  flex: 1;               // le champ prend toute la place restante
+  min-width: 0;
+  padding: 6px 10px;
+  font-size: 15px;
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+
+  &:focus {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 1px;
+  }
+}
+
+.search-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+  background: var(--color-primary);
+  color: var(--color-text);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+
+  &:hover {
+    background: var(--color-primary-hover);
+  }
+}

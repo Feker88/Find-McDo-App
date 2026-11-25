@@ -1,4 +1,10 @@
-.mycssmap {
-  height: 600px;
+// :host = l'élément <app-my-map-view> lui-même (inline par défaut)
+:host {
+  display: block;
+  height: 100%;
+}
+
+.map-container {
+  height: 100%;
   width: 100%;
 }
